@@ -10,7 +10,7 @@
     height: 320px;
     border-collapse: collapse;
     border: 1px solid #38678f;
-    margin: 50px auto;
+    margin: 20px auto;
     background: white;
   }
   th {
@@ -58,7 +58,7 @@
     }
 
     #menu {
-      width: 715px;
+      width: 760px;
       margin: auto;
       margin-top: 200px;
       font-size: 30px;
@@ -103,7 +103,7 @@
     #file, #or {
       user-select: none;
       -webkit-user-select: none;
-      cursor: default;
+      cursor: pointer;
     }
 
     #or {
@@ -127,12 +127,30 @@
     #hidden-file {
       display: none;
     }
+    
+    h1 {
+      color: #2196f3;
+    }
+    
+    p {
+      color: red;
+    }
+    
+    #menu.collapse {
+      margin-top: 10px;
+    }
+    
+    #menu.collapse h1 {
+      display: none;
+    }
   </style>
 </head>
 <body>
   <div id="menu">
+    <h1>Tabular Data Viewer</h1>
+    <p id="error"></p>
     <div id="file">select file</div>
-    <!-- <div id="or">or</div><input id="url" type="text" placeholder="paste a url and press enter" autofocus> -->
+    <div id="or">or</div><input id="url" type="text" placeholder="paste a url and press enter" autofocus>
   </div>
   <div id="table"></div>
   <input id="hidden-file" type="file">
