@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Browser based video player",
   "dependencies": {
-    "concat-stream": "^1.4.7",
-    "filereader-stream": "^0.2.0",
     "add-event-listener": "^0.0.1",
+    "concat-stream": "^1.4.7",
+    "detect-data-stream": "^1.0.0",
     "drag-and-drop-files": "^0.0.1",
-    "srt-to-vtt": "^1.0.1"
+    "filereader-stream": "^0.2.0",
+    "htmltable": "^1.2.1"
   },
   "devDependencies": {
     "browserify": "^8.0.3",
@@ -30,7 +31,7 @@
     "web",
     "browser"
   ],
-  "author": "Mathias Buus (@mafintosh)",
+  "author": "Finn Pauls",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mafintosh/webplay/issues"
